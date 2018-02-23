@@ -1,0 +1,48 @@
+.catalog-cover {
+  display: block;
+  line-height: 1.6em;
+  position: relative;
+  padding: 25px 30px 28px 30px;
+  width: 100%;
+
+  &:nth-child(odd) {
+    background-color: @green;
+  }
+  &:nth-child(even) {
+    background-color: #56c3b2;
+  }
+
+  &--interior::after {
+    content: "";
+    position: absolute;
+    right: 37px;
+    top: 24px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 62px;
+  }
+  &--toys::after {
+    content: "";
+    position: absolute;
+    right: 27px;
+    top: 22px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.catalog-cover__title {
+  color: white;
+  font-size: 19px;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

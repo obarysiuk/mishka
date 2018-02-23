@@ -1,0 +1,31 @@
+.hero {
+  min-height: 280px;
+  text-align: center;
+  padding-top: 69px;
+  color: #010000;
+  background: url(../img/hero-mobile@1x.jpg) no-repeat 50% center;
+  background-size: cover;
+}
+
+.hero__title {
+  font-size: 27px;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    background: none;
+    position: relative;
+  }
+
+  .hero__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+    margin: 0 auto;
+
+    br {
+      display: none;
+    }
+  }
+}
