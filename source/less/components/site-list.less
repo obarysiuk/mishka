@@ -1,6 +1,6 @@
 .site-list__item {
-  border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid @border-grey;
+  border-top: 1px solid @border-grey;
   margin: 0 -30px -1px -30px;
 }
 
@@ -8,11 +8,16 @@
   display: none;
 }
 
+.site-list__additional-link {
+  color: @black;
+}
+
 .site-list__link {
   font-size: 17px;
   line-height: 25px;
   font-weight: bold;
   display: block;
+  color: @black;
   padding: 27px 0 28px 75px;
   width: 320px;
   margin: 0 auto;
@@ -47,7 +52,7 @@
     width: 184px;
 
     &:first-child {
-      border-right: 1px solid #ececec;
+      border-right: 1px solid @border-grey;
     }
 
     &:nth-child(even) {

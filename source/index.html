@@ -66,46 +66,60 @@
     <main class="page-main">
         <div class="hero-container bg-zigzag-fill">
             <section class="hero">
-                <h1 class="hero__title">Милые штуки<br> ручной<br> работы для дома</h1>
+                <h1 class="hero__title">Милые штуки
+                    <br> ручной
+                    <br> работы для дома</h1>
             </section>
 
             <div class="catalog-covers ">
                 <h2 class="visually-hidden">Каталог</h2>
-                    <a class="catalog-cover catalog-cover--interior" href="#">
-                        <h3 class="catalog-cover__title">Предметы<br> интерьера
-                        </h3>
-                    </a>
-                    <a class="catalog-cover catalog-cover--toys" href="#">
-                        <h3 class="catalog-cover__title">Детские<br> игрушки
-                        </h3>
-                    </a>
-                </div>
+                <a class="catalog-cover catalog-cover--interior" href="#">
+                    <h3 class="catalog-cover__title">Предметы
+                        <br> интерьера
+                    </h3>
+                </a>
+                <a class="catalog-cover catalog-cover--toys" href="#">
+                    <h3 class="catalog-cover__title">Детские
+                        <br> игрушки
+                    </h3>
+                </a>
             </div>
         </div>
+        </div>
+        <section class="offer bg-zigzag-line">
+            <header class="offer__header-wrapper">
+                <h2 class="offer__title">Вязаные корзинки</h2>
+                <h3 class="offer__subtitle">ТОВАР&nbsp;
+                    <br>НЕДЕЛИ</h3>
+            </header>
+            <div class="offer__product-card">
+                <p class="offer__item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                <table class="offer__item-details">
+                    <tr>
+                        <td>Цвет:</td>
+                        <td>«Тиффани»/серый</td>
+                    </tr>
+                    <tr>
+                        <td>Диаметр:</td>
+                        <td>25 см</td>
+                    </tr>
+                    <tr>
+                        <td>Высота:</td>
+                        <td>15 см</td>
+                    </tr>
+                </table>
+            </div>
+            <picture class="offer__item-img">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x"> 
+                <img src="../img/triple-set-mobile@1x.jpg" srcset="../img/triple-set-mobile@2x.jpg" alt="фото товара">
+            </picture>
+            <div class="offer__order-wrapper">
+                <p class="offer__item-price">Цена: 990 руб.</p>
+                <button class="button" type="button" onclick="alert('добавлено в карзину)')">
+                    Заказать</button>
+            </div>
 
-
-        <section class="offer">
-            <h2 class="offer__title">Вязаные корзинки</h2>
-            <h3 class="offer__subtitle">ТОВАР НЕДЕЛИ
-            </h3>
-            <p class="offer__item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="offer__item-details">
-                <tr>
-                    <td>Цвет:</td>
-                    <td>«Тиффани»/серый</td>
-                </tr>
-                <tr>
-                    <td>Диаметр:</td>
-                    <td>25 см</td>
-                </tr>
-                <tr>
-                    <td>Высота:</td>
-                    <td>15 см</td>
-                </tr>
-            </table>
-            <img class="offer__item-img" src="" alt="фото товара">
-            <p class="offer__item-price"></p>
-            <a class="button" href="#">Заказать</a>
         </section>
         <section class="advantages">
             <h2 class="advantages__title">Коротко о нас:</h2>

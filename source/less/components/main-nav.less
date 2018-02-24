@@ -1,4 +1,3 @@
-
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
@@ -17,13 +16,12 @@
   }
 }
 
-  .main-nav__icon-cart {
+.main-nav__icon-cart {
+  position: absolute;
+  left: 33px;
+  top: 33px;
+}
 
-position: absolute;
-    left: 33px;
-    top: 33px;
-  }
-
-  @media (min-width: @desktop-width) {
-    justify-content: center;
-  }
+@media (min-width: @desktop-width) {
+  justify-content: center;
+}
