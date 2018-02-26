@@ -1,0 +1,58 @@
+.feature {
+  padding: 20px 30px;
+  font-weight: bold;
+}
+
+.feature__title {
+  margin-bottom: 25px;
+}
+
+.feature__item {
+  padding-top: 50px;
+  line-height: 1.2em;
+  width: 100%;
+
+  svg {
+    fill: @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .feature__item {
+    width: 50%;
+  }
+
+  .feature__item--ball {
+    order: 2;
+  }
+  
+  .feature__item--money {
+    order: 3;
+  }
+
+  .feature__item--heart {
+    order: 5;
+  }
+
+  .feature__item--ball {
+  }
+
+  .feature__item--rocket {
+    order: 4;
+  }
+
+  .feature__item--gift {
+    order: 6;
+  }
+}
