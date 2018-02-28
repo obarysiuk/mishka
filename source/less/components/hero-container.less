@@ -1,11 +1,14 @@
-
+.hero-container {
+  margin-bottom: 27px;
+}
 @media (min-width: @tablet-width) {
   .hero-container {
     display: flex;
     flex-direction: column;
-    min-height: 747px;
     background: url(../img/hero-tablet@1x.jpg) no-repeat 50% center;
     background-size: cover;
+    min-height: 747px;
+    margin-bottom: 43px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx)  {
       background-image: url(../img/hero-tablet@2x.jpg);
@@ -16,6 +19,8 @@
   .hero-container {
     background: url(../img/hero-desktop@1x.jpg) no-repeat 50% center;
     background-size: cover;
+    min-height: 743px;
+    margin-bottom: 23px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx)  {
       background-image: url(../img/hero-desktop@2x.jpg)

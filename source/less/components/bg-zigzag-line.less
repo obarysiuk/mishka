@@ -1,31 +1,36 @@
 .bg-zigzag-line {
-  position: relative;
-  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 0px 0px 6px;
+  // -moz-border-image: url(../img/bg-zigzag-line.svg) 23 0 repeat stretch;
+  // -webkit-border-image: url(../img/bg-zigzag-line.svg) 23 0 repeat stretch;
+  // -o-border-image: url(../img/bg-zigzag-line.svg) 23 0 repeat stretch;
+  border-image: url(../img/bg-zigzag-line.svg) 23 0 repeat stretch;
 
-  &::before {
-    content: "";
-    content: "";
-    width: 100%;
-    height: 6px;
-    position: absolute;
-    bottom: -15px;
-    background: url(../img/bg-zigzag-line.svg) repeat-x;
-    background-size: auto 100%;
-    margin-left: -30px;
-  }
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   content: "";
+  //   width: 100%;
+  //   height: 6px;
+  //   position: absolute;
+  //   bottom: 0;
+  //   background: url(../img/bg-zigzag-line.svg) repeat-x;
+  //   background-size: auto 100%;
+  //   margin-left: -30px;
+  // }
 }
 
 @media (min-width: @tablet-width) {
-  .bg-zigzag-line::before {
-    margin-left: -50px;
-    height: 17px;
+  .bg-zigzag-line {
+    border-width: 0px 0px 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .bg-zigzag-line::before {
-    margin-left: 0;
-    width: 1050px;
-    height: 23px;
+  .bg-zigzag-line {
+    border-width: 0px 0px 23px;
+    // margin-right: -50px;
+    // margin-left: -50px;
   }
 }

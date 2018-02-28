@@ -5,11 +5,23 @@
   padding: 25px 30px 28px 30px;
   width: 100%;
 
+  &:hover {
+    transform: translateY(-5px);
+  }
+
   &:nth-child(odd) {
     background-color: @green;
+
+    &:hover {
+      box-shadow: 0px 5px 0px @green;
+    }
   }
+
   &:nth-child(even) {
     background-color: #56c3b2;
+    &:hover {
+      box-shadow: 0px 5px 0px #56c3b2;
+    }
   }
 
   &--interior::after {
@@ -22,6 +34,7 @@
     width: 40px;
     height: 62px;
   }
+
   &--toys::after {
     content: "";
     position: absolute;
@@ -40,9 +53,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-cover {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 29px 30px 36px 30px;
 
+    &--interior::after {
+      top: 30px;
+    }
+    &--toys::after {
+      right: 34px;
+      top: 33px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog-cover {
+    padding: 28px 28px 29px 36px;
+  }
 
+  .catalog-cover__title {
+    font-size: 20px;
+  }
 }

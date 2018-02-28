@@ -6,7 +6,7 @@
   background: url(../img/hero-mobile@1x.jpg) no-repeat 50% center;
   background-size: cover;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx)  {
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url(../img/hero-mobile@2x.jpg);
   }
 }
@@ -20,6 +20,7 @@
   .hero {
     background: none;
     position: relative;
+    padding-top: 155px;
   }
 
   .hero__title {
@@ -31,5 +32,16 @@
     br {
       display: none;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    padding-top: 150px;
+  }
+  
+  .hero__title {
+    font-size: 53px;
+    width: 650px;
   }
 }

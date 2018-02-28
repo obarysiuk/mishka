@@ -1,18 +1,19 @@
 .feature {
-  padding: 20px 30px;
   font-weight: bold;
+  margin-bottom: 58px;
 }
 
 .feature__title {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .feature__item {
-  padding-top: 50px;
-  line-height: 1.2em;
+  line-height: 1.1em;
   width: 100%;
+  margin-bottom: 21px;
 
   svg {
+    height: 60px;
     fill: @green;
   }
 }
@@ -21,6 +22,12 @@
   .feature {
     padding-right: 50px;
     padding-left: 50px;
+    margin-bottom: 38px;
+  }
+
+  .feature__title {
+    font-size: 43px;
+    line-height: 1.2em;
   }
 
   .feature__list {
@@ -30,13 +37,15 @@
   }
 
   .feature__item {
-    width: 50%;
+    font-size: 20px;
+    width: 40%;
+    margin-bottom: 46px;
   }
 
   .feature__item--ball {
     order: 2;
   }
-  
+
   .feature__item--money {
     order: 3;
   }
@@ -54,5 +63,12 @@
 
   .feature__item--gift {
     order: 6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feature__title {
+    font-size: 53px;
+    line-height: 1.1em;
   }
 }
