@@ -95,13 +95,16 @@
 
 @media (min-width: @desktop-width) {
   .video {
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid @border-grey;
   }
 
   .video__header {
-      width: 100%;
+    width: 100%;
     order: 0;
+    border: 0;
+    justify-content: flex-end;
   }
 
   .video__player {
@@ -109,8 +112,9 @@
   }
 
   .video__footer {
-      width: 30%;
-      margin-left: auto;
-      margin-top: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-top: auto;
+    border: 0;
   }
 }

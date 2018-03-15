@@ -1,8 +1,7 @@
 .catalog-cover {
   display: block;
-  line-height: 1.6em;
   position: relative;
-  padding: 25px 30px 28px 30px;
+  padding: 25px 30px 30px 30px;
   width: 100%;
 
   &:hover {
@@ -55,16 +54,21 @@
 @media (min-width: @tablet-width) {
   .catalog-cover {
     font-size: 20px;
-    line-height: 1.5;
-    padding: 29px 30px 50px 30px;
+    padding: 30px 30px 45px 35px;
 
     &--interior::after {
       top: 30px;
     }
+
     &--toys::after {
       right: 34px;
       top: 33px;
     }
+  }
+
+  .catalog-cover__title {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
