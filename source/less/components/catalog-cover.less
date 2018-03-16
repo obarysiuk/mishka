@@ -1,48 +1,63 @@
 .catalog-cover {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   padding: 25px 30px 30px 30px;
   width: 100%;
+  background-color: @green;
 
   &:hover {
     transform: translateY(-5px);
-  }
+    background-color: #59d5bc;
+    box-shadow: 0px 5px 0px #59d5bc;
 
-  &:nth-child(odd) {
-    background-color: @green;
-
-    &:hover {
-      box-shadow: 0px 5px 0px @green;
+    .catalog-cover__icon {
+      fill: #29a592;
+      width: 60px;
     }
   }
 
-  &:nth-child(even) {
-    background-color: #56c3b2;
-    &:hover {
-      box-shadow: 0px 5px 0px #56c3b2;
+  &:active {
+    
+    .catalog-cover__title {
+      color: #8be2d0;
+    }
+    
+    .catalog-cover__icon {
+      fill: #44c0aa;
+    }
+  }
+}
+
+.catalog-cover__icon {
+  fill: #3bb09d;
+}
+
+.catalog-cover--darker {
+  background-color: #56c3b2;
+
+  .catalog-cover__icon {
+    fill: #35a999;
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+    box-shadow: 0px 5px 0px #46c1ae;
+
+    .catalog-cover__icon {
+      fill: #239f8e;
     }
   }
 
-  &--interior::after {
-    content: "";
-    position: absolute;
-    right: 37px;
-    top: 24px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 62px;
-  }
+  &:active {
 
-  &--toys::after {
-    content: "";
-    position: absolute;
-    right: 27px;
-    top: 22px;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    .catalog-cover__title {
+      color: #7ed4c6;
+    }
+
+    .catalog-cover__icon {
+      fill: #37b2a0;
+    }
   }
 }
 

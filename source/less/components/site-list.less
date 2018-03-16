@@ -10,6 +10,14 @@
 
 .site-list__additional-link {
   color: @black;
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .site-list__link {
@@ -21,6 +29,19 @@
   padding: 27px 0 28px 75px;
   width: 320px;
   margin: 0 auto;
+
+  &:hover {
+    color: #666666;
+
+    svg {
+      color:red;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+  
 }
 
 @media (min-width: @tablet-width) {

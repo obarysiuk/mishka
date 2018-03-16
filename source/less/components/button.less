@@ -1,7 +1,4 @@
 .button {
-
-    // display: block;
-
     border: 2px solid #444444;
     padding: 14px 30px;
     font-size: 17px;
@@ -10,4 +7,25 @@
     text-decoration: upper;
     text-transform: uppercase;
     width: 100%;
+
+    &:hover {
+        background-color: #444444;
+        color: white;
+    }
+
+    &:active {
+        background: rgba(68, 68, 68, .8);
+        color:#7c7c7c;
+
+    }
+}
+
+.review__prev, .review__next {
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
 }
