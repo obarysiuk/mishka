@@ -1,0 +1,62 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "учебный проект mishka",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obarysiuk/mishka.git"
+  },
+  "author": "Olga Barysiuk",
+  "bugs": {
+    "url": "https://github.com/obarysiuk/mishka/issues"
+  },
+  "homepage": "https://github.com/obarysiuk/mishka#readme",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^8.0.0",
+    "editorconfig-cli": "^0.2.1",
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^2.2.1",
+    "grunt-cwebp": "^2.1.1",
+    "grunt-juwain-posthtml": "^0.6.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "posthtml": "^0.11.3",
+    "posthtml-include": "^1.1.0",
+    "stylelint": "^9.0.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/js/**/*.js",
+    "source/*.html",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "8.9"
+  }
+}

@@ -1,0 +1,26 @@
+.social {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social__icon {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+@media (min-width: @tablet-width) {
+  .social {
+    align-items: baseline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+}

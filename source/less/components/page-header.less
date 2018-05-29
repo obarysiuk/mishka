@@ -1,0 +1,53 @@
+.page-header {
+  position: relative;
+  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
+  z-index: 3;
+}
+
+.page-header__logo {
+  padding-top: 20px;
+  padding-bottom: 23px;
+}
+
+.page-header__btn {
+  position: absolute;
+  top: 31px;
+  right: 31px;
+}
+
+.page-header__btn.menu-opened .page-header__icon-menu-close {
+  display: block;
+}
+
+.page-header__btn.menu-opened .page-header__icon-menu-open {
+  display: none;
+}
+
+.page-header__icon-menu-close {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 89px;
+    border-bottom: 1px solid @border-grey;
+  }
+
+  .page-header__btn {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    // width: 1150px;
+    // margin: 0 auto;
+  }
+
+  .page-header__logo {
+    order: 2;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.main-nav {
+  margin-bottom: -1px;
+}
+
+
+// .main-nav a {
+//   &:hover {
+//     opacity: 0.7;
+//   }
+
+//   &:active {
+//     opacity: 0.2;
+//   }
+// }
+
+
+
+
+.main-nav__list--closed {
+  display: none;
+}
+
+.main-nav__list--opened {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+}
+
+
+
+@media (min-width: @desktop-width) {
+  justify-content: center;
+}

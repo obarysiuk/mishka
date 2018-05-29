@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  color: inherit;
+
+  &:hover {
+    .copyright__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.copyright__icon {
+  fill: @green;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+
+  .copyright__text {
+    line-height: 2em;
+    padding-right: 28px;
+  }
+}

@@ -1,0 +1,153 @@
+.review {
+  margin-bottom: 30px;
+}
+
+.review__item {
+  margin-bottom: 33px;
+}
+
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.review__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: @dark-grey;
+  margin-bottom: 28px;
+}
+
+.review__author-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.review__author-nikname {
+  line-height: 30px;
+  font-weight: normal;
+  display: block;
+  margin-top: 7px;
+}
+
+.review__pagination {
+  width: 100%;
+  border: 1px solid @border-grey;
+  height: 52px;
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.review__prev {
+  width: 50%;
+  height: inherit;
+  background: url(../img/icon-left-arrow.svg) no-repeat 50% 50%;
+  border-right: 1px solid @border-grey;
+}
+
+.review__next {
+  width: 50%;
+  height: inherit;
+  background: url(../img/icon-right-arrow.svg) no-repeat 50% 50%;
+}
+
+.review__button {
+  font-size: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    position: relative;
+    background: url(../img/review@1x.jpg) no-repeat 0 0;
+    background-size: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 76px;
+    
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/review@2x.jpg);
+      background-size: 350px;
+    }
+  }
+
+  .review__title {
+    font-size: 43px;
+    margin-bottom: 50px;
+  }
+  
+  .review__items {
+    order: 3;
+    padding-bottom: 15px;
+  }
+
+  .review__text {
+    font-size: 17px;
+    line-height: 1.8em;
+    margin-bottom: 56px;
+  }
+
+  .review__button {
+    padding: 14px 36px;
+    width: auto;
+    order: 2;
+  }
+
+  .review__pagination {
+    width: 175px;
+    border: 0;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  .review__prev {
+    border: 0;
+  }
+
+  .review__author {
+    width: 50%;
+    order: 4;
+  }
+
+  .review__author-name {
+    font-size: 18px;
+  }
+
+  .review__author-nikname {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    width: 1050px;
+    background: url(../img/review@1x.jpg) no-repeat 0 0;
+    padding-bottom: 83px;
+    margin-bottom: 13px;
+  }
+
+  .review__title {
+    font-size: 53px;
+    margin-bottom: 44px;
+
+  }
+
+  .review__text {
+    margin-bottom: 35px;
+  }
+
+  .review__pagination {
+    right: 0;
+    bottom: 140px;
+    
+  }
+
+  .mySlides {
+    display: none;
+  }
+}

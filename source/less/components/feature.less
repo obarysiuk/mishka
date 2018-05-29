@@ -1,0 +1,74 @@
+.feature {
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.feature__title {
+  margin-bottom: 35px;
+}
+
+.feature__item {
+  line-height: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  svg {
+    width: 48px;
+    fill: @green;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feature {
+    margin-bottom: 38px;
+  }
+
+  .feature__title {
+    font-size: 43px;
+    line-height: 1.2em;
+  }
+
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .feature__item {
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 46px;
+  }
+
+  .feature__item--ball {
+    order: 2;
+  }
+
+  .feature__item--money {
+    order: 3;
+  }
+
+  .feature__item--heart {
+    order: 5;
+  }
+
+  .feature__item--ball {
+  }
+
+  .feature__item--rocket {
+    order: 4;
+  }
+
+  .feature__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feature__title {
+    font-size: 53px;
+    line-height: 1.1em;
+  }
+}
