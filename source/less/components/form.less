@@ -5,7 +5,6 @@
 .form__tagline {
   font-size: 13px;
   line-height: 24px;
-  // margin-bottom: 10px;
   margin-bottom: 25px;
 }
 
@@ -16,7 +15,6 @@
   line-height: 16px;
   color: @green;
   text-transform: uppercase;
-  // margin-bottom: 35px;
 
   &::after {
     content: "";
@@ -30,13 +28,7 @@
   }
 }
 
-.form__fieldset {
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-}
-
 .form__field-wrapper {
-  // margin-bottom: 25px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -86,6 +78,14 @@
   }
 }
 
+.form__input-radio:hover + .form__label-radio::before {
+  box-shadow: 0 0 0 9px #fff, 0 0 0 11px @green;
+}
+
+.form__input-radio:active + .form__label-radio::before {
+  box-shadow: 0 0 0 9px #fff, 0 0 0 11px #cacaca;
+}
+
 .form__field-checkbox {
   margin-bottom: 43px;
 
@@ -97,6 +97,14 @@
 .form__label-checkbox {
   position: relative;
   padding: 0 0 0 47px;
+}
+
+.form__input-checkbox:hover + .form__label-checkbox::before {
+  border: 2px solid @green;
+}
+
+.form__input-checkbox:active + .form__label-checkbox::before {
+  border: 2px solid #cacaca;
 }
 
 .form__label-checkbox::before {
@@ -139,20 +147,24 @@
   padding: 15px 10px 15px 0;
   font-size: 17px;
   line-height: 18px;
-  color: #d2d2d2;
+  color: @dark-grey;
   background-color: inherit;
   border: 0;
   border-bottom: 2px solid #000000;
-  // margin-bottom: 25px;
   width: 100%;
+
+
+  &:hover {
+    border-bottom: 2px solid @green;
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .form__input-text::placeholder {
   color: #d2d2d2;
-}
-
-.form__field-text {
-  margin-bottom: 25px;
 }
 
 .form__textarea {
@@ -182,6 +194,16 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+  }
+
+  .form__field-text--row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+  }
+
+  .form__label-text {
+    padding-right: 30px;
   }
 
   .form__title {
